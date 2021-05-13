@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://chia.togatech.org/" target="_blank" rel="noopener noreferrer">
-    <img src="https://chia.togatech.org/favicon.ico" width="100" alt="Chia-Utils Logo">
+    <img src="https://chia.togatech.org/favicon.ico" width="50" alt="Chia-Utils Logo">
   </a>
 </p>
 
