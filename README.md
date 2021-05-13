@@ -12,3 +12,38 @@
 </p>
 
 A set of JavaScript utilities to facilitate conversions for the Chia network
+
+## Table of Contents
+- Install
+- Address to Puzzle Hash
+- Puzzle Hash to Address
+- Get Coin Info
+- Bytes to Hex
+- Hex to Bytes
+
+## Install
+To install from NPM:
+```bash
+npm install chia-utils
+```
+
+To install from GitHub:
+```bash
+git clone https://github.com/CMEONE/chia-utils.git
+```
+
+To test:
+```bash
+npm install
+npm test
+```
+
+To include from NPM:
+```javascript
+const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_hex, hex_to_bytes } = require("chia-utils");
+```
+
+To include from file:
+```javascript
+const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_hex, hex_to_bytes } = require("./chia-utils.js");
+```
