@@ -54,6 +54,7 @@ let puzzle_hash = address_to_puzzle_hash(address);
 ```
 Parameters:
 - address: string ("xch1...")
+
 Return type: string ("0x...")
 
 ## Puzzle Hash to Address
@@ -62,6 +63,7 @@ let address = puzzle_hash_to_address(puzzle_hash);
 ```
 Parameters:
 - puzzle_hash: string ("0x...")
+
 Return type: string ("xch1...")
 
 ## Get Coin Info
@@ -72,6 +74,7 @@ Parameters:
 - parent_coin_info: string ("0x...")
 - puzzle_hash: string ("0x...")
 - amount: number (0.01)
+
 Return type: string ("0x...")
 
 ## Bytes to Hex
@@ -80,6 +83,7 @@ let hex = bytes_to_hex(bytes);
 ```
 Parameters:
 - bytes: Array or Uint8Array ([0, 255, ...])
+
 Return type: string ("fedcba9876543210...")
 
 ## Hex to Bytes
@@ -88,4 +92,5 @@ let bytes = hex_to_bytes(hex);
 ```
 Parameters:
 - hex: string ("fedcba9876543210...")
+
 Return type: Uint8Array ([0, 255, ...])
