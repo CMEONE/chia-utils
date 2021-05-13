@@ -1,7 +1,7 @@
 {
   "name": "chia-utils",
   "version": "1.0.0",
-  "description": "A set of javascript utilities to facilitate conversions for the Chia network",
+  "description": "A set of JavaScript utilities to facilitate conversions for the Chia network",
   "main": "chia-utils.js",
   "scripts": {
     "test": "mocha --reporter list"
