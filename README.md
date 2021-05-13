@@ -52,45 +52,45 @@ const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_
 ```javascript
 let puzzle_hash = address_to_puzzle_hash(address);
 ```
-Parameters:
+**Parameters:**
 - address: string ("xch1...")
 
-Return type: string ("0x...")
+**Return type:** string ("0x...")
 
 ## Puzzle Hash to Address
 ```javascript
 let address = puzzle_hash_to_address(puzzle_hash);
 ```
-Parameters:
+**Parameters:**
 - puzzle_hash: string ("0x...")
 
-Return type: string ("xch1...")
+**Return type:** string ("xch1...")
 
 ## Get Coin Info
 ```javascript
 let coin_info = get_coin_info(parent_coin_info, puzzle_hash, amount);
 ```
-Parameters:
+**Parameters:**
 - parent_coin_info: string ("0x...")
 - puzzle_hash: string ("0x...")
 - amount: number (0.01)
 
-Return type: string ("0x...")
+**Return type:** string ("0x...")
 
 ## Bytes to Hex
 ```javascript
 let hex = bytes_to_hex(bytes);
 ```
-Parameters:
+**Parameters:**
 - bytes: Array or Uint8Array ([0, 255, ...])
 
-Return type: string ("fedcba9876543210...")
+**Return type:** string ("fedcba9876543210...")
 
 ## Hex to Bytes
 ```javascript
 let bytes = hex_to_bytes(hex);
 ```
-Parameters:
+**Parameters:**
 - hex: string ("fedcba9876543210...")
 
-Return type: Uint8Array ([0, 255, ...])
+**Return type:** Uint8Array ([0, 255, ...])
