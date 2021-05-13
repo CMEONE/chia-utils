@@ -15,11 +15,11 @@ A set of JavaScript utilities to facilitate conversions for the Chia network
 
 ## Table of Contents
 - [Install](https://github.com/CMEONE/chia-utils#install)
-- Address to Puzzle Hash
-- Puzzle Hash to Address
-- Get Coin Info
-- Bytes to Hex
-- Hex to Bytes
+- [Address to Puzzle Hash](https://github.com/CMEONE/chia-utils#address-to-puzzle-hash)
+- [Puzzle Hash to Address](https://github.com/CMEONE/chia-utils#puzzle-hash-to-address)
+- [Get Coin Info](https://github.com/CMEONE/chia-utils#get-coin-info)
+- [Bytes to Hex](https://github.com/CMEONE/chia-utils#get-coin-info)
+- [Hex to Bytes](https://github.com/CMEONE/chia-utils#get-coin-info)
 
 ## Install
 To install from NPM:
@@ -52,23 +52,40 @@ const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_
 ```javascript
 let puzzle_hash = address_to_puzzle_hash(address);
 ```
+Parameters:
+- address: string ("xch1...")
+Return type: string ("0x...")
 
 ## Puzzle Hash to Address
 ```javascript
 let address = puzzle_hash_to_address(puzzle_hash);
 ```
+Parameters:
+- puzzle_hash: string ("0x...")
+Return type: string ("xch1...")
 
 ## Get Coin Info
 ```javascript
 let coin_info = get_coin_info(parent_coin_info, puzzle_hash, amount);
 ```
+Parameters:
+- parent_coin_info: string ("0x...")
+- puzzle_hash: string ("0x...")
+- amount: number (0.01)
+Return type: string ("0x...")
 
 ## Bytes to Hex
 ```javascript
 let hex = bytes_to_hex(bytes);
 ```
+Parameters:
+- bytes: Array or Uint8Array ([0, 255, ...])
+Return type: string ("fedcba9876543210...")
 
 ## Hex to Bytes
 ```javascript
 let bytes = hex_to_bytes(hex);
 ```
+Parameters:
+- hex: string ("fedcba9876543210...")
+Return type: Uint8Array ([0, 255, ...])
