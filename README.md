@@ -14,7 +14,7 @@
 A set of JavaScript utilities to facilitate conversions for the Chia network
 
 ## Table of Contents
-- Install
+- [Install](https://github.com/CMEONE/chia-utils#install)
 - Address to Puzzle Hash
 - Puzzle Hash to Address
 - Get Coin Info
@@ -46,4 +46,29 @@ const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_
 To include from file:
 ```javascript
 const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_hex, hex_to_bytes } = require("./chia-utils.js");
+```
+
+## Address to Puzzle Hash
+```javascript
+let puzzle_hash = address_to_puzzle_hash(address);
+```
+
+## Puzzle Hash to Address
+```javascript
+let address = puzzle_hash_to_address(puzzle_hash);
+```
+
+## Get Coin Info
+```javascript
+let coin_info = get_coin_info(parent_coin_info, puzzle_hash, amount);
+```
+
+## Bytes to Hex
+```javascript
+let hex = bytes_to_hex(bytes);
+```
+
+## Hex to Bytes
+```javascript
+let bytes = hex_to_bytes(hex);
 ```
