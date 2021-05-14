@@ -14,12 +14,12 @@
 A set of JavaScript utilities to facilitate conversions for the Chia network
 
 ## Table of Contents
-- [Install](https://github.com/CMEONE/chia-utils#install)
-- [Address to Puzzle Hash](https://github.com/CMEONE/chia-utils#address-to-puzzle-hash)
-- [Puzzle Hash to Address](https://github.com/CMEONE/chia-utils#puzzle-hash-to-address)
-- [Get Coin Info](https://github.com/CMEONE/chia-utils#get-coin-info)
-- [Bytes to Hex](https://github.com/CMEONE/chia-utils#get-coin-info)
-- [Hex to Bytes](https://github.com/CMEONE/chia-utils#get-coin-info)
+- [Install](#install)
+- [Address to Puzzle Hash](#address-to-puzzle-hash)
+- [Puzzle Hash to Address](#puzzle-hash-to-address)
+- [Get Coin Info](#get-coin-info)
+- [Bytes to Hex](#bytes-to-hex)
+- [Hex to Bytes](#hex-to-bytes)
 
 ## Install
 To install from NPM:
