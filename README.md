@@ -9,6 +9,8 @@
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/v/chia-utils.svg?sanitize=true" alt="Version"></a>
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/l/chia-utils.svg?sanitize=true" alt="Version"></a>
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/dm/chia-utils.svg?sanitize=true" alt="Monthly Downloads"></a>
+  <a href="https://www.npmjs.com/package/chia-utils"><img src="https://badgen.net/bundlephobia/min/chia-utils?color=green&label=minified" alt="Minified"></a>
+  <a href="https://www.npmjs.com/package/chia-utils"><img src="https://badgen.net/bundlephobia/minzip/chia-utils?color=green&label=gzipped" alt="Gzipped"></a>
 </p>
 
 A set of JavaScript utilities to facilitate conversions for the Chia network
