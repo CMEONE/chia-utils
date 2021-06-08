@@ -19,6 +19,8 @@ try {
         root.returnExports = factory();
   }
 }(typeof self !== 'undefined' ? self : this, function () {
+    const ONE_TRILLION = 1000000000000;
+
     const CHARSET = "qpzry9x8gf2tvdw0s3jn54khce6mua7l";
 
 
@@ -227,17 +229,23 @@ try {
         return encode_puzzle_hash(hex_to_bytes(puzzle_hash), "xch");
     }
 
-    function get_coin_info(parent_coin_info, puzzle_hash, amount) {
-        amount = amount * 1000000000000;
+    function get_coin_info(parent_coin_info, puzzle_hash, amount_decimal) {
+        return get_coin_info_mojo(parent_coin_info, puzzle_hash, parseInt(amount_decimal * ONE_TRILLION));
+    }
+
+    function get_coin_info_mojo(parent_coin_info, puzzle_hash, amount) {
         if(parent_coin_info.indexOf("0x") == 0) {
             parent_coin_info = parent_coin_info.substring(2);
         }
         if(puzzle_hash.indexOf("0x") == 0) {
             puzzle_hash = puzzle_hash.substring(2);
         }
-        const a = Buffer.from(parent_coin_info, 'hex')
-        const b = Buffer.from(puzzle_hash, 'hex')
+        const a = Buffer.from(parent_coin_info, 'hex');
+        const b = Buffer.from(puzzle_hash, 'hex');
+        const fixPreLength = (num, len) => (Array(len).join(0) + num).slice(-len);
         let amountHex = amount.toString(16);
+        const byte_count = (amount.toString(2).length + 8) >> 3
+        amountHex = fixPreLength(amountHex, byte_count * 2)
         if (amountHex.length % 2 == 1) {
             amountHex = '0' + amountHex
         }
@@ -249,6 +257,5 @@ try {
         return "0x" + hash.digest('hex');
     }
 
-
-    return { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_hex, hex_to_bytes };
+    return { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, get_coin_info_mojo, bytes_to_hex, hex_to_bytes };
 }));
