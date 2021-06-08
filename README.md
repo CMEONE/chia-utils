@@ -43,12 +43,25 @@ npm test
 
 To include from NPM:
 ```javascript
-const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_hex, hex_to_bytes } = require("chia-utils");
+const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, get_coin_info_mojo, bytes_to_hex, hex_to_bytes } = require("chia-utils");
 ```
 
 To include from file:
 ```javascript
-const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, bytes_to_hex, hex_to_bytes } = require("./chia-utils.js");
+const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, get_coin_info_mojo, bytes_to_hex, hex_to_bytes } = require("./chia-utils.js");
+```
+
+To use in the browser:
+```html
+<script type="text/javascript" src="chia-utils.js"></script>
+<script>
+  ChiaUtils.address_to_puzzle_hash( ... )
+  ChiaUtils.puzzle_hash_to_address( ... )
+  ChiaUtils.get_coin_info( ... )
+  ChiaUtils.get_coin_info_mojo( ... )
+  ChiaUtils.bytes_to_hex( ... )
+  ChiaUtils.hex_to_bytes( ... )
+</script>
 ```
 
 ## Address to Puzzle Hash
