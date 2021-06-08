@@ -70,12 +70,23 @@ let address = puzzle_hash_to_address(puzzle_hash);
 
 ## Get Coin Info
 ```javascript
-let coin_info = get_coin_info(parent_coin_info, puzzle_hash, amount);
+let coin_info = get_coin_info(parent_coin_info, puzzle_hash, amount_decimal);
 ```
 **Parameters:**
 - parent_coin_info: string ("0x...")
 - puzzle_hash: string ("0x...")
-- amount: number (0.01)
+- amount_decimal: number (0.01)
+
+**Return type:** string ("0x...")
+
+## Get Coin Info Mojo 
+```javascript
+let coin_info = get_coin_info_mojo(parent_coin_info, puzzle_hash, amount);
+```
+**Parameters:**
+- parent_coin_info: string ("0x...")
+- puzzle_hash: string ("0x...")
+- amount: number (1000000000000)
 
 **Return type:** string ("0x...")
 
