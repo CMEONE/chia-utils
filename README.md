@@ -1,10 +1,10 @@
-<p align="center">
+<!-- <p align="center">
   <a href="https://chia.togatech.org/" target="_blank" rel="noopener noreferrer">
     <img src="https://chia.togatech.org/favicon.ico" width="50" alt="Chia-Utils Logo">
   </a>
-</p>
+</p> -->
 
-<h1 align="center">Chia-Utils</h1>
+<h1 align="center">Unofficial Library: Chia-Utils</h1>
 <p align="center">
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/v/chia-utils.svg?sanitize=true" alt="Version"></a>
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/l/chia-utils.svg?sanitize=true" alt="Version"></a>
@@ -20,6 +20,7 @@ A set of JavaScript utilities to facilitate conversions for the Chia network
 - [Address to Puzzle Hash](#address-to-puzzle-hash)
 - [Puzzle Hash to Address](#puzzle-hash-to-address)
 - [Get Coin Info](#get-coin-info)
+- [Get Coin Info Mojo](#get-coin-info-mojo)
 - [Bytes to Hex](#bytes-to-hex)
 - [Hex to Bytes](#hex-to-bytes)
 
