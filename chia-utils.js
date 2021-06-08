@@ -29,7 +29,7 @@ try {
         let chk = 1;
         for(value in values) {
             value = values[value];
-            top = chk >> 25
+            let top = chk >> 25
             chk = (chk & 0x1FFFFFF) << 5 ^ value
             for(let i = 0; i < 5; i++) {
                 if((top >> i) & 1) {
