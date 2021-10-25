@@ -1,6 +1,6 @@
 {
   "name": "chia-utils",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A set of JavaScript utilities to facilitate conversions for the Chia network",
   "main": "chia-utils.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "chia-network"
   ],
   "author": "TogaTech",
-  "license": "GPL-3.0-or-later",
+  "license": "AGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/CMEONE/chia-utils/issues"
   },
