@@ -1,6 +1,6 @@
 {
   "name": "chia-utils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A set of JavaScript utilities to facilitate conversions for the Chia network",
   "main": "chia-utils.js",
   "scripts": {
