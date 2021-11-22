@@ -6,9 +6,11 @@
 
 <h1 align="center">Unofficial Library: Chia-Utils</h1>
 <p align="center">
+  <a href="https://github.com/CMEONE/chia-utils/actions"><img src="https://img.shields.io/github/workflow/status/CMEONE/chia-utils/Node.js%20CI" alt="Build Status"></a>
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/v/chia-utils.svg?sanitize=true" alt="Version"></a>
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/l/chia-utils.svg?sanitize=true" alt="Version"></a>
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/dm/chia-utils.svg?sanitize=true" alt="Monthly Downloads"></a>
+  <a href="https://www.npmjs.com/package/chia-utils"><img src="https://img.shields.io/npm/dt/chia-utils.svg?sanitize=true" alt="Total Downloads"></a>
   <!--<a href="https://www.npmjs.com/package/chia-utils"><img src="https://badgen.net/bundlephobia/min/chia-utils?color=green&label=minified" alt="Minified"></a>
   <a href="https://www.npmjs.com/package/chia-utils"><img src="https://badgen.net/bundlephobia/minzip/chia-utils?color=green&label=gzipped" alt="Gzipped"></a>-->
 </p>
