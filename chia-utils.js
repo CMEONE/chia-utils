@@ -10068,11 +10068,11 @@
         return "0x" + bytes_to_hex(decode_puzzle_hash(address));
     }
 
-    function puzzle_hash_to_address(puzzle_hash) {
+    function puzzle_hash_to_address(puzzle_hash, prefix = "xch") {
         if(puzzle_hash.indexOf("0x") == 0) {
             puzzle_hash = puzzle_hash.substring(2);
         }
-        return encode_puzzle_hash(hex_to_bytes(puzzle_hash), "xch");
+        return encode_puzzle_hash(hex_to_bytes(puzzle_hash), prefix);
     }
 
     function get_coin_info(parent_coin_info, puzzle_hash, amount_decimal) {

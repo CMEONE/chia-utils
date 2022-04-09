@@ -40,4 +40,10 @@ describe("Test", function() {
 		}
 		assert.equal(equal, true);
 	});
+
+	it("6: Should convert a puzzle hash to an address with a non-defaul prefix", function() {
+		let puzzle_hash = "0xd730a0407dfcf4a2c6099b6aed6423a3fe2fe3469f538795f785ff6d594be0dd";
+		let expected = "txch16uc2qsraln6293sfnd4w6epr50lzlc6xnafc090hshlk6k2turwsa7px9x";
+		assert.equal(puzzle_hash_to_address(puzzle_hash, "txch"), expected)
+	});
 });
