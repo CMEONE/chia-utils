@@ -77,10 +77,11 @@ let puzzle_hash = address_to_puzzle_hash(address);
 
 ## Puzzle Hash to Address
 ```javascript
-let address = puzzle_hash_to_address(puzzle_hash);
+let address = puzzle_hash_to_address(puzzle_hash, prefix = "xch");
 ```
 **Parameters:**
 - puzzle_hash: string ("0x...")
+- prefix: string ("xch") - default: "xch"
 
 **Return type:** string ("xch1...")
 
